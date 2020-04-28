@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div *ngIf = "logged">
+<div class="content">
+  <div *ngIf="show === 0" class="content__inner">
+    <h2>Your bag is empty</h2> <br>
+    <div><button routerLink="/categories">Let's shop ! </button></div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  </div>
+</div>
+  <div class="bag__data" *ngFor="let product of products">
+    <div class="bag__inner">
+     <div class="bag__inner__photo">
+       <img width="200" [src]="product.link" alt="photo">
+     </div>
+      <div class="bag__inner__data">
+        <button class="remove" (click)="remove(product.id)">X</button>
+        <p class="title">{{product.name}}</p>
+        <h2 >{{product.price}}$</h2>
+        <br>
+        <p style="color: #999">{{product.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+<div *ngIf = "!logged" >
+   <div *ngIf="show === 0" class="content__inner">
+  <h2><strong>
+You need to log in!</strong></h2> 
+</div>
+</div>
+</div>
+</body>

@@ -1,0 +1,23 @@
+body {
+	font-family: Helvetica, Sans-Serif;
+}
+.button, button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #1976d2;
+  border: none;
+}
+
+.button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}

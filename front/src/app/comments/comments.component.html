@@ -1,0 +1,27 @@
+<div *ngIf = "logged">
+	<div class="comments">
+	  <textarea cols="60" rows="5" [(ngModel)]="comment"> </textarea>
+	  <button class="btn__add" (click)="addComment()" >Leave comment</button>
+	  <div class="comments__data" *ngFor="let comment of comments">
+	    <textarea class="area__update" cols="60" rows="1" *ngIf="!update">{{comment.comment}}</textarea>
+	    <textarea class="area__update" cols="60" rows="1" *ngIf="update" [(ngModel)]="text" [placeholder]="comment.comment"></textarea>
+	    <button *ngIf="update" class="btn__save" (click)="saveComment(comment.id)">Save</button>
+	    <p class="btn__delete" (click)="deleteComment(comment.id)">X</p>
+	    <p class="btn__delete" (click)="updateComment(comment.id)"> ✎ </p>
+	  </div>
+	</div>
+</div>
+
+<div *ngIf = "!logged">
+	<div class="comments">
+	  <textarea cols="60" rows="5" [(ngModel)]="comment"> </textarea>
+	  <button class="btn__add" (click)="showToast()" >Leave comment</button>
+	  <div class="comments__data" *ngFor="let comment of comments">
+	    <textarea class="area__update" cols="60" rows="1" *ngIf="!update">{{comment.comment}}</textarea>
+	    <textarea class="area__update" cols="60" rows="1" *ngIf="update" [(ngModel)]="text" [placeholder]="comment.comment"></textarea>
+	    <button *ngIf="update" class="btn__save" (click)="saveComment(comment.id)">Save</button>
+	    <p class="btn__delete" (click)="showToast">X</p>
+	    <p class="btn__delete" (click)="showToast"> ✎ </p>
+	  </div>
+	</div>
+</div>

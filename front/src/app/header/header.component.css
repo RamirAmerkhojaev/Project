@@ -1,0 +1,350 @@
+svg {
+  width: 186px;
+  margin-left: -15px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.sign {
+	background-color: transparent;
+  border: 2px solid black;
+	margin-left: 645px;
+	position: absolute;
+	padding: 20px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.sign:hover {
+  color: #d602f2;
+  border-color: #d602f2;
+}
+
+.isClicked {
+ z-index: 10;
+}
+#reference {
+  position: relative;
+  margin-left: 638px;
+  width: 186px;
+  font-weight: bold;
+}
+.menu {
+	margin-top: 15px;
+	position: absolute;
+	margin-left: -617px;
+	padding: 10px;
+	background-color: transparent;
+  border: 2px solid black;
+  outline: none;
+}
+
+.menu:hover {
+  color: #d602f2;
+  border-color: #d602f2;
+}
+
+.bag:hover {
+  color: #d602f2;
+  border-color: #d602f2;
+}
+
+.menu:disabled {
+  color: white;
+}
+
+.bag {
+  margin-top: 10px;
+  position: absolute;
+  margin-left: 520px;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  outline: none;
+}
+
+body {
+    background-color: white;
+		z-index: 2;
+	  font-family: Helvetica, Sans-Serif;
+	  position: sticky;
+  	top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+span {
+	font-size: 20px
+}
+.modal__inner input{
+  display: block;
+}
+
+.active{
+  width: 100%;
+  border: none;
+  border-bottom: 1px #D2D6D8 solid;
+  border-width: 100%;
+  outline: none;
+}
+
+.modal__inner label{
+  display: block;
+}
+
+.modal__inner input[type=checkbox]{
+  display: inline-block;
+  transform: scale(1.5);
+  padding: 5px;
+}
+
+.modal__inner button{
+  display: block;
+}
+.modal{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center
+}
+
+.modal__inner{
+  width: 420px;
+  height: 620px;
+  background: linear-gradient(45deg,#ed1385 0,#d602f2 50%,#3700ff 100%);
+  position: absolute;
+  z-index: 2;
+  padding: 0px 10px;
+}
+
+.modal__inner__create{
+  width: 440px;
+  height: 540px;
+  background: linear-gradient(45deg,#ed1385 0,#d602f2 50%,#3700ff 100%);
+  position: absolute;
+  z-index: 2;
+  overflow-y: scroll;
+  padding: 0px 10px 10px 10px;
+}
+
+
+.modal__inner__text{
+  margin-top: -10px;
+  padding: 15px 40px 10px 50px;
+  background: #ffffff;
+  box-sizing: content-box;
+}
+
+
+.modal__inner__text div{
+  margin-bottom: 40px;
+}
+
+.modal__inner__text label{
+  font-size: 16px;
+  color: #1f313a;
+  line-height: 23px;
+  font-weight: 400;
+  margin-bottom: -25px;
+}
+
+
+.modal__backdrop{
+  background-color: #000000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.btn__close{
+  margin-top: 17px;
+  margin-left: 370px;
+  transform: scale(2);
+  color: #ffffff;
+  background-color: #3700ff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.inside__form{
+  color: #333333;
+  font-weight: 600;
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+.inside_create a{
+  margin-left: 40px;
+  font-size: 14px;
+  color: #a50aff;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.inside_create a:hover{
+  border-bottom: #a50aff 1px solid;
+}
+
+
+.inside__check{
+  font-size: 12px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.inside__check2{
+  font-size: 14px;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.inside__check2 a {
+  color: #a50aff;
+  text-decoration: none;
+}
+.inside__check2 a:hover {
+  color: #a50aff;
+  border-bottom: 1px solid #a50aff;
+}
+
+.btn__sign{
+  background-color: #1F313A;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  padding: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn__sign:hover{
+  background: linear-gradient(45deg,#ed1385 0,#d602f2 50%,#3700ff 100%);
+
+}
+
+.inside__forgot{
+  text-align: center;
+  color: #a50aff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.menu__bar{
+  width: 1700px;
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(255, 239, 92) 0%, 50%, rgb(255, 175, 179) 100%);
+}
+.brands {
+  display: inline-block;
+  position: absolute;
+  margin-top: 475px;
+  margin-left: 600px;
+
+}
+.brands a {
+  color: black;
+}
+.fa {
+  padding: 10px;
+  width: 30px;
+}
+.fa-spotify:hover {
+  color: white;
+  background-color: #1ed760;
+
+}
+.fa-pinterest:hover {
+  color: white;
+  background-color: #cb2027;
+}
+.fa-instagram:hover {
+  color: white;
+  background-color: #517fa4;
+}
+.fa-twitter:hover {
+  color: white;
+  background-color: #00aced;
+}
+.fa-snapchat:hover {
+  color: white;
+  background-color:  #fffc00;
+}
+
+.fa-facebook:hover {
+  color: white;
+  background-color: #3b5998;
+}
+.menu__inner{
+  text-align: center;
+  margin-top: 60px;
+  margin-left: -650px;
+}
+.menu__card1 {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+   transition: transform .2s;
+}
+.menu__card1 a {
+  text-decoration: none;
+  color: black;
+}
+.menu__card1 a:hover {
+  color: #d602f2;
+}
+.menu__card2 a:hover {
+     color: #d602f2;
+}
+.menu__card2 a {
+  text-decoration: none;
+  color: black;
+}
+.menu__card2 {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  margin-left: 400px;
+}
+
+.first__row{
+  margin-bottom: 40px;
+}
+
+.inside__form__create{
+  color: #333333;
+  font-weight: 600;
+  font-size: 27px;
+  margin-right: 40px;
+}
+
+.inside__info{
+  color: #1f313a;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+
+
+.selector select{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+
+
+
+
+

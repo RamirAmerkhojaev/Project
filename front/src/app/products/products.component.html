@@ -1,0 +1,25 @@
+<body>
+	<div class = "categ">
+		<span *ngFor = "let category of categories">
+			<a  href="/categories/{{category.id}}/products">
+				{{category.name}}
+			</a>
+		</span>
+	</div>
+	<!--<div class = "skirts">
+			<div>{{}}</div>
+	</div>-->
+
+	<div class= "prd">
+		<div *ngFor = "let product of products">
+			<a routerLink="/categories/{{id}}/products/{{product.id}}/description">
+				<div class = "name">{{product.name}}<br>
+					${{product.price}}
+				</div>
+				<img class = "pic" [src]="product.link" [alt]="product.name">
+			</a>
+		</div>
+	</div>
+
+</body>
+

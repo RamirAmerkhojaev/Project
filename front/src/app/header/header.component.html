@@ -1,0 +1,169 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<button class = "menu" style="font-size:24px" (click)="showMenu()"><i class="fa fa-bars"></i><span>&#8194;Menu</span></button>
+
+
+<div *ngIf="!menuOpened" class="menu__bar">
+  <a id = "reference" href = "#">
+    <svg viewBox="0 0 208 52" xmlns="https://www.w3.org/2000/svg">
+      <title>Monki Logo Medium</title>
+      <g fill="none" fill-rule="evenodd">
+        <path d="M83.39 9c-9.623 0-17.45 7.87-17.45 17.544C65.94 36.17 73.767 44 83.39 44c9.626 0 17.455-7.83 17.455-17.456C100.845 16.87 93.015 9 83.39 9zm0 30.284c-6.922 0-12.558-5.69-12.558-12.688 0-6.995 5.636-12.686 12.56-12.686s12.56 5.69 12.56 12.686c0 6.997-5.636 12.688-12.56 12.688zM139 9v35l-25.035-23.955V44H109V9l24.99 23.278V9H139zm35.1 35h-6.65L154 28.78V44h-5V9h5v13.598L167.167 9h6.613l-16.31 16.408L174.1 44zm24.894 0c-5.6 0-10.214-2.096-12.994-4.716V44h-4.975L181 9h5v19.267c-.135 8.11 7.314 11.258 12.994 11.258V44zm-143.69 0l-4.11-20.448L41.236 44l-10.16-20.102L27.202 44h-4.95l.942-4.716C19.41 42.06 14.492 43.81 10 44v-4.477c5.59-.062 13.79-3.924 15.177-9.838l4.244-20.55 11.806 24.473L53.1 9.078 60.253 44h-4.95z" fill="#1F313A">
+        </path>
+      </g>
+    </svg>
+  </a>
+  <div class="menu__inner">
+       <span *ngFor = "let category of categories">
+        <div class="menu__card1">
+          <p class="first__row" style = "font-size: 30px">Clothing</p>
+          <a href="/categories/1/products"><p>Skirts</p></a>
+          <a href="/categories/2/products"><p>Dresses</p></a>
+          <a href="/categories/3/products"><p>Coats & Jackets</p></a>
+          <a href="/categories/4/products"><p>Trousers</p></a>
+          <a href="/categories/5/products"><p>Tops</p></a>
+          <a href="/categories/6/products"><p>Jeans</p></a>
+          <a href="/categories/8/products"><p>Underwear & Nightwear</p></a>
+          <a href="/categories/7/products"><p>Sweatshirts & hoodies</p></a>
+        </div>
+        <div class="menu__card2">
+          <p class="first__row" style = "font-size: 30px">Accessories</p>
+          <a href="/categories/9/products"><p>Shoes</p></a>
+          <a href="/categories/10/products"><p>Socks & Tights</p></a>
+          <a href="/categories/11/products"><p>Hats, scarves & gloves</p></a>
+          <a href="/categories/12/products"><p>Bags, wallets & belts</p></a>
+        </div>
+        </span>
+  </div>
+  <div  class = "brands">
+    <a href="https://www.facebook.com/Monki" target="_blank
+    "><i class="fa fa-facebook" style="font-size:36px"></i></a>
+    <a href="https://www.pinterest.se/monkiworld/" target="_blank
+    "><i class="fa fa-pinterest" style="font-size:36px"></i></a>
+    <a href="https://www.instagram.com/monki/" target="_blank
+    "><i class="fa fa-instagram" style="font-size:36px"></i></a>
+    <a href="https://twitter.com/monkiworld" target="_blank
+    "><i class="fa fa-twitter" style="font-size:36px"></i></a>
+    <a href="https://www.monki.com/en_sek/about-monki/snapchat.html" target="_blank
+    "><i class="fa fa-snapchat" style="font-size:36px"></i></a>
+    <a href="https://open.spotify.com/user/1122676831" target="_blank
+    "><i class="fa fa-spotify" style="font-size:36px"></i></a>
+  </div>
+</div>
+
+<a href = "#">
+  <svg viewBox="0 0 208 52" xmlns="https://www.w3.org/2000/svg">
+    <title>Monki Logo Medium</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M83.39 9c-9.623 0-17.45 7.87-17.45 17.544C65.94 36.17 73.767 44 83.39 44c9.626 0 17.455-7.83 17.455-17.456C100.845 16.87 93.015 9 83.39 9zm0 30.284c-6.922 0-12.558-5.69-12.558-12.688 0-6.995 5.636-12.686 12.56-12.686s12.56 5.69 12.56 12.686c0 6.997-5.636 12.688-12.56 12.688zM139 9v35l-25.035-23.955V44H109V9l24.99 23.278V9H139zm35.1 35h-6.65L154 28.78V44h-5V9h5v13.598L167.167 9h6.613l-16.31 16.408L174.1 44zm24.894 0c-5.6 0-10.214-2.096-12.994-4.716V44h-4.975L181 9h5v19.267c-.135 8.11 7.314 11.258 12.994 11.258V44zm-143.69 0l-4.11-20.448L41.236 44l-10.16-20.102L27.202 44h-4.95l.942-4.716C19.41 42.06 14.492 43.81 10 44v-4.477c5.59-.062 13.79-3.924 15.177-9.838l4.244-20.55 11.806 24.473L53.1 9.078 60.253 44h-4.95z" fill="#1F313A">
+      </path>
+    </g>
+  </svg>
+</a>
+
+<button class = "sign" (click)="showForm()"><span>Sign in</span></button>
+<div *ngIf="!isClicked" class= "isClicked" style = "text-align: center;">
+  <div class="modal form-group"style = "text-align: center;">
+    <div class="modal__backdrop"></div>
+    <div class="modal__inner"style = "text-align: center;">
+      <div><button class="btn__close" (click)="closeForm()">x</button></div>
+      <div class="modal__inner__text">
+        <div class="modal__wrapper"></div>
+        <div class="head__inner">
+          <span class="inside__form">Sign in</span>
+          <span class="inside_create"><a (click)="showCreateForm()" style="font-weight: 600;">Create an account</a></span>
+        </div>
+
+        <div *ngIf="!logged">
+          <div>
+            <label>Enter User name</label>
+          </div>
+          <div>
+            <input type="text" placeholder="Username" class="active form-control" [(ngModel)]="username">
+          </div>
+          <div>
+            <label>Password</label>
+          </div>
+          <div>
+            <input type="text" placeholder="Password" class="active form-control" [(ngModel)]="password">
+          </div>
+          <div>
+            <input type="checkbox" checked> <span class="inside__check">Keep me signed in</span>
+          </div>
+          <div>
+            <button class="btn__sign" (click) = "login()">Sign in</button>
+          </div>
+        </div>
+
+
+        <div class="wrapper" *ngIf="logged">
+          <h1>You are signed in!</h1>
+          <button class="btn__sign" (click)="logout()">Logout</button>
+        </div>
+
+        <div>
+          <p class="inside__forgot">Forgot password</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!isCreate" class="isClicked" >
+  <div class="modal">
+    <div class="modal__backdrop"></div>
+    <div class="modal__inner__create">
+      <div><button class="btn__close" (click)="closeCreateForm()">x</button></div>
+      <div class="modal__inner__text">
+        <div class="head__inner" style="margin-top: 20px;">
+          <span class="inside__form__create">New customer</span>
+          <span class="inside_create"><a (click)="showCreateForm()" style="font-weight: 600;">Sing in</a></span>
+        </div>
+        <div class="inside__info">We´ll send you order confirmation to this email</div>
+
+
+        <div class = "signup">
+          <div  *ngIf ="!done">
+            <input type = "email" name="email" class="active form-control" [(ngModel)]="user.email"  placeholder="Email address" ><br><br>
+            <input type ="text" name="username" class="active" [(ngModel)]="user.username"  placeholder="Username"><br><br>
+            <input name="password" class="active" [(ngModel)]="user.password" placeholder="Password"><br><br>
+            <div class="selector">
+              <select>
+                <option value="0">Select country:</option>
+                <option value="1">Australia</option>
+                <option value="2">Canada</option>
+                <option value="3">France</option>
+                <option value="4">Hong Kong</option>
+                <option value="5">Spain</option>
+                <option value="6">Italy</option>
+                <option value="7">USA</option>
+                <option value="8">UK</option>
+                <option value="9">Russia</option>
+              </select>
+            </div>
+            <div>
+              <input type="checkbox"> <span class="inside__check2">I confirm that I am 18 years or older and I consent to Monki processing my personal data in order to send personalized marketing material in accordance with <a >Privacy notice.</a></span>
+            </div>
+            <div>
+              <input type="checkbox"> <span class="inside__check2">I consent to Monki using my personal data to manage my personal account in accordance with <a>Privacy notice.</a></span>
+            </div>
+            <button class="btn__sign" (click) = "signup(user)">Create account</button><br><br>
+          </div>
+        </div>
+
+        <div *ngIf="done">
+          <div><h1>You Registered!</h1></div>
+        </div>`
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<button class = "bag" style="font-size:24px"  routerLink="categories/bag"><span>Bag</span></button>
+
+
+
+</body>

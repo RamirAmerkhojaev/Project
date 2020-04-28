@@ -1,0 +1,62 @@
+.comments button{
+  display: block;
+}
+
+.comments textarea{
+  padding: 5px;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.comment__text{
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: 450px;
+}
+
+.comments__data{
+  display: flex;
+}
+
+.btn__delete{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-right: 5px ;
+  margin-top: -1px;
+}
+
+.area__update{
+  margin-left:5px;
+  height: 45px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.btn__save{
+  background-color: #449D44;
+  color: #ffffff;
+  padding: 5px;
+  margin-bottom: -10px;
+  height: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn__add{
+  padding: 15px 25px;
+  background-color: #449D44;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

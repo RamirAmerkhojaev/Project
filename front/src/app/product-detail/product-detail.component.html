@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+
+
+	<div style="margin-left: 100px;" class = "pic">
+		<img [src]="product.link" alt="products.name">
+	</div>
+
+   
+	<div class = "description">
+		<div>
+			<h2>{{product.name}}</h2>
+			<span>${{product.price}}</span>  <br><br>
+
+		
+      <div *ngIf = "logged">
+        <button (click)="add()" class="btn__bag">Add to bag</button>
+      </div>
+
+ <div *ngIf = "!logged">
+        <button (click)="ShowToast()" class="btn__bag">Add to bag</button>
+      </div>
+    
+			<p>Description: {{product.description}}</p>
+	</div>
+
+		<div class="buttons">
+			<button shareButton="facebook" [style.backgroundColor]="share.prop.facebook.color">
+				<a class="fa fa-facebook"></a>
+			</button>
+			<button shareButton="twitter" [style.backgroundColor]="share.prop.twitter.color">
+				<a class="fa fa-twitter"></a>
+			</button>
+			<button shareButton="pinterest" [style.backgroundColor]="share.prop.pinterest.color">
+		        <a class="fa fa-pinterest"></a>
+		    </button>
+		    <button shareButton="whatsapp" [style.backgroundColor]="share.prop.whatsapp.color">
+				<a class="fa fa-whatsapp"></a>
+			</button>
+			<button shareButton="vk" [style.backgroundColor]="share.prop.vk.color">
+				<a class="fa fa-vk"></a>
+			</button>
+			<button shareButton="telegram" [style.backgroundColor]="share.prop.telegram.color">
+		        <a class="fa fa-telegram"></a>
+		    </button>
+		    <button shareButton="linkedin" [style.backgroundColor]="share.prop.linkedin.color">
+				<a class="fa fa-linkedin"></a>
+			</button>
+			<button shareButton="google" [style.backgroundColor]="share.prop.google.color">
+		        <a class="fa fa-google"></a>
+		    </button>
+	    </div>
+      <app-comments></app-comments>
+    </div>
+
+
+</body>
+

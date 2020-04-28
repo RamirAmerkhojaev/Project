@@ -1,0 +1,51 @@
+body {
+	background-color: rgb(254, 205, 211);
+	margin-top: 50px;
+	text-align: center;
+	z-index: 1;
+}
+.text {
+	color: grey;
+    display: inline-block;
+    width: 600px;
+    font-family: Circular-Book-S,HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,Sans-Serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px; 
+}
+.brands {
+	text-align: center;
+}
+a {
+	color: black;
+}
+.fa {
+	padding: 10px;
+	width: 30px;
+}
+.fa-spotify:hover {
+	color: white;
+	background-color: #1ed760;
+
+}
+.fa-pinterest:hover {
+	color: white;
+	background-color: #cb2027;
+}
+.fa-instagram:hover {
+	color: white;
+	background-color: #517fa4;
+}
+.fa-twitter:hover {
+	color: white;
+	background-color: #00aced;
+}
+.fa-snapchat:hover {
+	color: white;
+	background-color:  #fffc00;
+}
+
+.fa-facebook:hover {
+	color: white;
+	background-color: #3b5998;
+} 
